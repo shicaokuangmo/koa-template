@@ -1,0 +1,210 @@
+[2018-04-11T12:04:32.207] [ERROR] error - 
+*************** error log start ***************
+request method: GET
+request header: {"host":"localhost:3001","connection":"keep-alive","cache-control":"max-age=0","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9","cookie":"Webstorm-7248cd63=c57e2df5-18cd-420a-9d4c-9ec2567b21eb"}
+request url:  /add?userName=admin&userPass=456
+request client ip:  ::1
+request query:  {"userName":"admin","userPass":"456"}
+response time: 527ms
+error name: SequelizeDatabaseError
+error stack: SequelizeDatabaseError: Unknown column 'createdAt' in 'field list'
+    at Query.formatError (D:\Project\koa-template\node_modules\sequelize\lib\dialects\mysql\query.js:247:16)
+    at Query.handler [as onResult] (D:\Project\koa-template\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.Command.execute (D:\Project\koa-template\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (D:\Project\koa-template\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\Project\koa-template\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\Project\koa-template\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\Project\koa-template\node_modules\mysql2\lib\connection.js:89:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:266:12)
+    at readableAddChunk (_stream_readable.js:253:11)
+    at Socket.Readable.push (_stream_readable.js:211:10)
+    at TCP.onread (net.js:585:20)
+*************** error log end ***************
+
+[2018-04-11T12:27:13.599] [ERROR] error - 
+*************** error log start ***************
+request method: GET
+request header: {"host":"localhost:3001","connection":"keep-alive","cache-control":"max-age=0","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9","cookie":"Webstorm-7248cd63=c57e2df5-18cd-420a-9d4c-9ec2567b21eb"}
+request url:  /add?userName=admin&userPass=456
+request client ip:  ::1
+request query:  {"userName":"admin","userPass":"456"}
+response time: 486ms
+error name: ReferenceError
+error stack: ReferenceError: key is not defined
+    at sequelize._getColumns (D:\Project\koa-template\utils\sequelize.js:110:13)
+    at sequelize.insert (D:\Project\koa-template\utils\sequelize.js:55:68)
+    at userDAOs.addUser (D:\Project\koa-template\modules\user\userDAOs.js:22:28)
+    at router.get (D:\Project\koa-template\routes\test.js:19:37)
+    at dispatch (D:\Project\koa-template\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\Project\koa-template\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\Project\koa-template\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\Project\koa-template\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\Project\koa-template\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\Project\koa-template\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\Project\koa-template\node_modules\koa-compose\index.js:42:32)
+    at next (D:\Project\koa-template\node_modules\koa-compose\index.js:43:18)
+    at D:\Project\koa-template\middlewares\ExceptionHandler.js:35:19
+    at dispatch (D:\Project\koa-template\node_modules\koa-compose\index.js:42:32)
+    at next (D:\Project\koa-template\node_modules\koa-compose\index.js:43:18)
+    at views (D:\Project\koa-template\node_modules\koa-views\lib\index.js:61:12)
+    at dispatch (D:\Project\koa-template\node_modules\koa-compose\index.js:42:32)
+    at next (D:\Project\koa-template\node_modules\koa-compose\index.js:43:18)
+    at send.then.done (D:\Project\koa-template\node_modules\koa-static\index.js:43:20)
+    at <anonymous>
+*************** error log end ***************
+
+[2018-04-11T12:28:18.906] [ERROR] error - 
+*************** error log start ***************
+request method: GET
+request header: {"host":"localhost:3001","connection":"keep-alive","cache-control":"max-age=0","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9","cookie":"Webstorm-7248cd63=c57e2df5-18cd-420a-9d4c-9ec2567b21eb"}
+request url:  /add?userName=admin&userPass=456
+request client ip:  ::1
+request query:  {"userName":"admin","userPass":"456"}
+response time: 490ms
+error name: ReferenceError
+error stack: ReferenceError: key is not defined
+    at sequelize._getColumns (D:\Project\koa-template\utils\sequelize.js:110:13)
+    at sequelize.insert (D:\Project\koa-template\utils\sequelize.js:55:68)
+    at userDAOs.addUser (D:\Project\koa-template\modules\user\userDAOs.js:22:28)
+    at router.get (D:\Project\koa-template\routes\test.js:19:37)
+    at dispatch (D:\Project\koa-template\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\Project\koa-template\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\Project\koa-template\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\Project\koa-template\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\Project\koa-template\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\Project\koa-template\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\Project\koa-template\node_modules\koa-compose\index.js:42:32)
+    at next (D:\Project\koa-template\node_modules\koa-compose\index.js:43:18)
+    at D:\Project\koa-template\middlewares\ExceptionHandler.js:35:19
+    at dispatch (D:\Project\koa-template\node_modules\koa-compose\index.js:42:32)
+    at next (D:\Project\koa-template\node_modules\koa-compose\index.js:43:18)
+    at views (D:\Project\koa-template\node_modules\koa-views\lib\index.js:61:12)
+    at dispatch (D:\Project\koa-template\node_modules\koa-compose\index.js:42:32)
+    at next (D:\Project\koa-template\node_modules\koa-compose\index.js:43:18)
+    at send.then.done (D:\Project\koa-template\node_modules\koa-static\index.js:43:20)
+    at <anonymous>
+*************** error log end ***************
+
+[2018-04-11T12:29:26.431] [ERROR] error - 
+*************** error log start ***************
+request method: GET
+request header: {"host":"localhost:3001","connection":"keep-alive","cache-control":"max-age=0","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9","cookie":"Webstorm-7248cd63=c57e2df5-18cd-420a-9d4c-9ec2567b21eb"}
+request url:  /add?userName=admin&userPass=456
+request client ip:  ::1
+request query:  {"userName":"admin","userPass":"456"}
+response time: 489ms
+error name: ReferenceError
+error stack: ReferenceError: key is not defined
+    at sequelize._getColumns (D:\Project\koa-template\utils\sequelize.js:110:13)
+    at sequelize.insert (D:\Project\koa-template\utils\sequelize.js:55:68)
+    at userDAOs.addUser (D:\Project\koa-template\modules\user\userDAOs.js:22:28)
+    at router.get (D:\Project\koa-template\routes\test.js:19:37)
+    at dispatch (D:\Project\koa-template\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\Project\koa-template\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\Project\koa-template\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\Project\koa-template\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\Project\koa-template\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\Project\koa-template\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\Project\koa-template\node_modules\koa-compose\index.js:42:32)
+    at next (D:\Project\koa-template\node_modules\koa-compose\index.js:43:18)
+    at D:\Project\koa-template\middlewares\ExceptionHandler.js:35:19
+    at dispatch (D:\Project\koa-template\node_modules\koa-compose\index.js:42:32)
+    at next (D:\Project\koa-template\node_modules\koa-compose\index.js:43:18)
+    at views (D:\Project\koa-template\node_modules\koa-views\lib\index.js:61:12)
+    at dispatch (D:\Project\koa-template\node_modules\koa-compose\index.js:42:32)
+    at next (D:\Project\koa-template\node_modules\koa-compose\index.js:43:18)
+    at send.then.done (D:\Project\koa-template\node_modules\koa-static\index.js:43:20)
+    at <anonymous>
+*************** error log end ***************
+
+[2018-04-11T12:30:33.909] [ERROR] error - 
+*************** error log start ***************
+request method: GET
+request header: {"host":"localhost:3001","connection":"keep-alive","cache-control":"max-age=0","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9","cookie":"Webstorm-7248cd63=c57e2df5-18cd-420a-9d4c-9ec2567b21eb"}
+request url:  /add?userName=admin&userPass=456
+request client ip:  ::1
+request query:  {"userName":"admin","userPass":"456"}
+response time: 487ms
+error name: ReferenceError
+error stack: ReferenceError: key is not defined
+    at sequelize._getColumns (D:\Project\koa-template\utils\sequelize.js:110:13)
+    at sequelize.insert (D:\Project\koa-template\utils\sequelize.js:55:68)
+    at userDAOs.addUser (D:\Project\koa-template\modules\user\userDAOs.js:22:28)
+    at router.get (D:\Project\koa-template\routes\test.js:19:37)
+    at dispatch (D:\Project\koa-template\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\Project\koa-template\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\Project\koa-template\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\Project\koa-template\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\Project\koa-template\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\Project\koa-template\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\Project\koa-template\node_modules\koa-compose\index.js:42:32)
+    at next (D:\Project\koa-template\node_modules\koa-compose\index.js:43:18)
+    at D:\Project\koa-template\middlewares\ExceptionHandler.js:35:19
+    at dispatch (D:\Project\koa-template\node_modules\koa-compose\index.js:42:32)
+    at next (D:\Project\koa-template\node_modules\koa-compose\index.js:43:18)
+    at views (D:\Project\koa-template\node_modules\koa-views\lib\index.js:61:12)
+    at dispatch (D:\Project\koa-template\node_modules\koa-compose\index.js:42:32)
+    at next (D:\Project\koa-template\node_modules\koa-compose\index.js:43:18)
+    at send.then.done (D:\Project\koa-template\node_modules\koa-static\index.js:43:20)
+    at <anonymous>
+*************** error log end ***************
+
+[2018-04-11T12:31:34.230] [ERROR] error - 
+*************** error log start ***************
+request method: GET
+request header: {"host":"localhost:3001","connection":"keep-alive","cache-control":"max-age=0","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9","cookie":"Webstorm-7248cd63=c57e2df5-18cd-420a-9d4c-9ec2567b21eb"}
+request url:  /add?userName=admin&userPass=456
+request client ip:  ::1
+request query:  {"userName":"admin","userPass":"456"}
+response time: 510ms
+error name: ReferenceError
+error stack: ReferenceError: Sequelize is not defined
+    at sequelize._getColumns (D:\Project\koa-template\utils\sequelize.js:113:28)
+    at sequelize.insert (D:\Project\koa-template\utils\sequelize.js:55:68)
+    at userDAOs.addUser (D:\Project\koa-template\modules\user\userDAOs.js:22:28)
+    at router.get (D:\Project\koa-template\routes\test.js:19:37)
+    at dispatch (D:\Project\koa-template\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\Project\koa-template\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\Project\koa-template\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\Project\koa-template\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\Project\koa-template\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\Project\koa-template\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\Project\koa-template\node_modules\koa-compose\index.js:42:32)
+    at next (D:\Project\koa-template\node_modules\koa-compose\index.js:43:18)
+    at D:\Project\koa-template\middlewares\ExceptionHandler.js:35:19
+    at dispatch (D:\Project\koa-template\node_modules\koa-compose\index.js:42:32)
+    at next (D:\Project\koa-template\node_modules\koa-compose\index.js:43:18)
+    at views (D:\Project\koa-template\node_modules\koa-views\lib\index.js:61:12)
+    at dispatch (D:\Project\koa-template\node_modules\koa-compose\index.js:42:32)
+    at next (D:\Project\koa-template\node_modules\koa-compose\index.js:43:18)
+    at send.then.done (D:\Project\koa-template\node_modules\koa-static\index.js:43:20)
+    at <anonymous>
+*************** error log end ***************
+
+[2018-04-11T12:32:03.532] [ERROR] error - 
+*************** error log start ***************
+request method: GET
+request header: {"host":"localhost:3001","connection":"keep-alive","cache-control":"max-age=0","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9","cookie":"Webstorm-7248cd63=c57e2df5-18cd-420a-9d4c-9ec2567b21eb"}
+request url:  /add?userName=admin&userPass=456
+request client ip:  ::1
+request query:  {"userName":"admin","userPass":"456"}
+response time: 544ms
+error name: SequelizeDatabaseError
+error stack: SequelizeDatabaseError: Unknown column 'createdAt' in 'field list'
+    at Query.formatError (D:\Project\koa-template\node_modules\sequelize\lib\dialects\mysql\query.js:247:16)
+    at Query.handler [as onResult] (D:\Project\koa-template\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.Command.execute (D:\Project\koa-template\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (D:\Project\koa-template\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\Project\koa-template\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\Project\koa-template\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\Project\koa-template\node_modules\mysql2\lib\connection.js:89:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:266:12)
+    at readableAddChunk (_stream_readable.js:253:11)
+    at Socket.Readable.push (_stream_readable.js:211:10)
+    at TCP.onread (net.js:585:20)
+*************** error log end ***************
+

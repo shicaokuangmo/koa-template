@@ -1,0 +1,68 @@
+[2018-04-10T15:00:59.688] [ERROR] error - 
+*************** error log start ***************
+request method: GET
+request header: {"host":"localhost:3001","connection":"keep-alive","cache-control":"max-age=0","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9","cookie":"Webstorm-7248cd63=c57e2df5-18cd-420a-9d4c-9ec2567b21eb"}
+request url:  /
+request client ip:  ::1
+request query:  {}
+response time: 381ms
+error name: Error
+error stack: Error: Please install mysql2 package manually
+    at new ConnectionManager (D:\Project\koa-template\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:38:15)
+    at new MysqlDialect (D:\Project\koa-template\node_modules\sequelize\lib\dialects\mysql\index.js:14:30)
+    at new Sequelize (D:\Project\koa-template\node_modules\sequelize\lib\sequelize.js:239:20)
+    at new sequelize (D:\Project\koa-template\utils\sequelize.js:24:20)
+    at module.exports (D:\Project\koa-template\utils\sequelize.js:81:12)
+    at new dbHelper (D:\Project\koa-template\modules\dbHelper.js:17:9)
+    at Object.getInstance (D:\Project\koa-template\modules\dbHelper.js:29:16)
+    at userDAOs.getUserInfo (D:\Project\koa-template\modules\user\userDAOs.js:18:18)
+    at router.get (D:\Project\koa-template\routes\test.js:8:18)
+    at dispatch (D:\Project\koa-template\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\Project\koa-template\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\Project\koa-template\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\Project\koa-template\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\Project\koa-template\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\Project\koa-template\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\Project\koa-template\node_modules\koa-compose\index.js:42:32)
+    at next (D:\Project\koa-template\node_modules\koa-compose\index.js:43:18)
+    at D:\Project\koa-template\middlewares\ExceptionHandler.js:35:19
+    at dispatch (D:\Project\koa-template\node_modules\koa-compose\index.js:42:32)
+    at next (D:\Project\koa-template\node_modules\koa-compose\index.js:43:18)
+    at views (D:\Project\koa-template\node_modules\koa-views\lib\index.js:61:12)
+    at dispatch (D:\Project\koa-template\node_modules\koa-compose\index.js:42:32)
+*************** error log end ***************
+
+[2018-04-10T15:01:40.801] [ERROR] error - 
+*************** error log start ***************
+request method: GET
+request header: {"host":"localhost:3001","connection":"keep-alive","cache-control":"max-age=0","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9","cookie":"Webstorm-7248cd63=c57e2df5-18cd-420a-9d4c-9ec2567b21eb"}
+request url:  /
+request client ip:  ::1
+request query:  {}
+response time: 403ms
+error name: Error
+error stack: Error: Please install mysql2 package manually
+    at new ConnectionManager (D:\Project\koa-template\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:38:15)
+    at new MysqlDialect (D:\Project\koa-template\node_modules\sequelize\lib\dialects\mysql\index.js:14:30)
+    at new Sequelize (D:\Project\koa-template\node_modules\sequelize\lib\sequelize.js:239:20)
+    at new sequelize (D:\Project\koa-template\utils\sequelize.js:24:20)
+    at module.exports (D:\Project\koa-template\utils\sequelize.js:81:12)
+    at new dbHelper (D:\Project\koa-template\modules\dbHelper.js:17:9)
+    at Object.getInstance (D:\Project\koa-template\modules\dbHelper.js:29:16)
+    at userDAOs.getUserInfo (D:\Project\koa-template\modules\user\userDAOs.js:18:18)
+    at router.get (D:\Project\koa-template\routes\test.js:8:18)
+    at dispatch (D:\Project\koa-template\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\Project\koa-template\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\Project\koa-template\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\Project\koa-template\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\Project\koa-template\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\Project\koa-template\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\Project\koa-template\node_modules\koa-compose\index.js:42:32)
+    at next (D:\Project\koa-template\node_modules\koa-compose\index.js:43:18)
+    at D:\Project\koa-template\middlewares\ExceptionHandler.js:35:19
+    at dispatch (D:\Project\koa-template\node_modules\koa-compose\index.js:42:32)
+    at next (D:\Project\koa-template\node_modules\koa-compose\index.js:43:18)
+    at views (D:\Project\koa-template\node_modules\koa-views\lib\index.js:61:12)
+    at dispatch (D:\Project\koa-template\node_modules\koa-compose\index.js:42:32)
+*************** error log end ***************
+

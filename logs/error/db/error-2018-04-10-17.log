@@ -1,0 +1,38 @@
+[2018-04-10T17:01:25.669] [ERROR] error - 
+*************** error log start ***************
+database name: koadb
+database user: root
+error name: SequelizeAccessDeniedError
+error stack: SequelizeAccessDeniedError: Access denied for user 'root'@'192.168.108.13' (using password: YES)
+    at Utils.Promise.tap.then.catch.err (D:\Project\koa-template\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:141:19)
+    at tryCatcher (D:\Project\koa-template\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (D:\Project\koa-template\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (D:\Project\koa-template\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (D:\Project\koa-template\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (D:\Project\koa-template\node_modules\bluebird\js\release\promise.js:689:18)
+    at Async._drainQueue (D:\Project\koa-template\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (D:\Project\koa-template\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (D:\Project\koa-template\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:781:20)
+    at tryOnImmediate (timers.js:743:5)
+    at processImmediate [as _immediateCallback] (timers.js:714:5)
+*************** error log end ***************
+
+[2018-04-10T17:02:39.806] [ERROR] error - 
+*************** info log start ***************
+database name: koadb
+database user: root
+*************** info log end ***************
+
+[2018-04-10T17:06:23.462] [ERROR] error - 
+*************** info log start ***************
+database name: koadb
+database user: root
+*************** info log end ***************
+
+[2018-04-10T17:07:13.258] [ERROR] error - 
+*************** info log start ***************
+database name: koadb
+database user: root
+*************** info log end ***************
+
