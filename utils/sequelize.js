@@ -10,16 +10,16 @@
 const $config = require('../config');
 const orm = require('sequelize');
 const logger = require('./log4js/logger');
-const loggerFormatter = require("./log4js/loggerFormatter") ;
+const loggerFormatter = require("./log4js/loggerFormatter");
 
 class sequelize {
-    constructor(databaseInfo) {
+    constructor(data) {
 
-        if ("string" != typeof databaseInfo.databaseName) {
-            throw new Error(`the databaseInfo.databaseName must be string !`);
+        if ("string" != typeof data.databaseName) {
+            throw new Error(`the sequelize constructor databaseName must be string !`);
         }
 
-        this.dbInfo = $config.databases[databaseInfo.databaseName];
+        this.dbInfo = $config.databases[data.databaseName];
 
         this.orm = new orm(
             this.dbInfo.dbName,

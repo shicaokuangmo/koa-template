@@ -112,6 +112,29 @@ function _formatDBLog(dbInfo, ex) {
     return _logText;
 }
 
+// 缓存格式文本
+function _formatCacheLog(cacheInfo, ex) {
+    let _logText = new String();
+
+    // 缓存类型
+    _logText += "cache type: " + cacheInfo.type + "\n";
+
+    // 缓存服务地址
+    _logText += "cache host: " + cacheInfo.host + "\n";
+
+    // 缓存服务端口
+    _logText += "cache port: " + cacheInfo.port + "\n";
+
+    if(ex) {
+        //错误名称
+        _logText += "error name: " + ex.name + "\n";
+        //错误详情
+        _logText += "error stack: " + ex.stack + "\n";
+    }
+
+    return _logText;
+}
+
 module.exports = {
     // 导出模块接口
     getReqText : (options) => {
@@ -120,5 +143,8 @@ module.exports = {
     },
     getDataBaseText : (options) => {
         return getTextTemplate({ level: options.level, textObj: options.textObj, formatFun: _formatDBLog(options.textObj.dbInfo, options.textObj.ex) }) ;
+    },
+    getCacheText : (options) => {
+        return getTextTemplate({ level: options.level, textObj: options.textObj, formatFun: _formatCacheLog(options.textObj.cacheInfo, options.textObj.ex) }) ;
     }
 } ;

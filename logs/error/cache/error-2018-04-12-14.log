@@ -1,0 +1,44 @@
+[2018-04-12T14:33:44.757] [ERROR] error - 
+*************** error log start ***************
+cache type: redis
+cache host: 192.168.0.113
+cache port: 6379
+error name: ReplyError
+error stack: ReplyError: ERR invalid password
+    at parseError (D:\Project\koa-template\node_modules\_redis-parser@2.6.0@redis-parser\lib\parser.js:193:12)
+    at parseType (D:\Project\koa-template\node_modules\_redis-parser@2.6.0@redis-parser\lib\parser.js:303:14)
+*************** error log end ***************
+
+[2018-04-12T14:33:44.760] [ERROR] error - 
+*************** error log start ***************
+cache type: redis
+cache host: 192.168.0.113
+cache port: 6379
+error name: ReplyError
+error stack: ReplyError: NOAUTH Authentication required.
+    at parseError (D:\Project\koa-template\node_modules\_redis-parser@2.6.0@redis-parser\lib\parser.js:193:12)
+    at parseType (D:\Project\koa-template\node_modules\_redis-parser@2.6.0@redis-parser\lib\parser.js:303:14)
+*************** error log end ***************
+
+[2018-04-12T14:35:28.729] [ERROR] error - 
+*************** error log start ***************
+cache type: redis
+cache host: 192.168.0.113
+cache port: 6379
+error name: ReplyError
+error stack: ReplyError: ERR invalid password
+    at parseError (D:\Project\koa-template\node_modules\_redis-parser@2.6.0@redis-parser\lib\parser.js:193:12)
+    at parseType (D:\Project\koa-template\node_modules\_redis-parser@2.6.0@redis-parser\lib\parser.js:303:14)
+*************** error log end ***************
+
+[2018-04-12T14:35:28.732] [ERROR] error - 
+*************** error log start ***************
+cache type: redis
+cache host: 192.168.0.113
+cache port: 6379
+error name: ReplyError
+error stack: ReplyError: NOAUTH Authentication required.
+    at parseError (D:\Project\koa-template\node_modules\_redis-parser@2.6.0@redis-parser\lib\parser.js:193:12)
+    at parseType (D:\Project\koa-template\node_modules\_redis-parser@2.6.0@redis-parser\lib\parser.js:303:14)
+*************** error log end ***************
+

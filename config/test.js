@@ -26,6 +26,14 @@ module.exports = {
         defaultHost: 'http://www.youedata.com',//'http://192.168.112.3:8089',//'',//'http://210.13.50.98:10133', //http://www.youedata.com/portalInterface/goods/category
         defaultUrl: ''
     },
+    caches: {
+        auth: {
+            type: 'redis',
+            host: '192.168.0.113',
+            port: 6379,
+            password: 'youedata2018_'
+        }
+    },
     databases: {
         defaultHost: '192.168.0.113',
         defaultPort: 3306,
